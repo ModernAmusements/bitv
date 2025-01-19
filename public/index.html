@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barrierefreiheit Prüfer</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>Barrierefreiheit Prüfen</h1>
+            <p>Stellen Sie sicher, dass Ihre Website die Anforderungen an Barrierefreiheit gemäß BITV 2.0 erfüllt.</p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Über das Tool</h2>
+            <p>Unser Tool hilft Ihnen, Barrierefreiheitsprobleme auf Ihrer Website zu identifizieren. Geben Sie einfach die URL ein, und wir zeigen Ihnen eine Übersicht der gefundenen Probleme.</p>
+            <form id="urlForm" class="form">
+                <label for="url">Geben Sie die URL Ihrer Website ein:</label>
+                <input type="url" id="url" name="url" placeholder="https://example.com" required>
+                <button type="submit">Prüfen</button>
+            </form>
+            <div id="results" class="results"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Barrierefreiheit Prüfer. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>

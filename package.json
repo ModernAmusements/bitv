@@ -1,0 +1,13 @@
+{
+    "name": "pa11y-vercel",
+    "version": "1.0.0",
+    "description": "Barrierefreiheit Prüfer mit Pa11y für Vercel",
+    "main": "api/check.js",
+    "scripts": {
+        "dev": "vercel dev",
+        "start": "vercel start"
+    },
+    "dependencies": {
+        "pa11y": "^6.1.1"
+    }
+}
