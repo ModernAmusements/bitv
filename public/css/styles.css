@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /* Swiss grid-inspired design using black, white, and primary orange */
 body {
     margin: 0;

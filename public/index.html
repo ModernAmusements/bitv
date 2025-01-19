@@ -4,29 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barrierefreiheit Prüfer</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header class="hero">
-        <div class="container">
-            <h1>Barrierefreiheit Prüfen</h1>
-            <p>Stellen Sie sicher, dass Ihre Website die Anforderungen an Barrierefreiheit gemäß BITV 2.0 erfüllt.</p>
+<body class="bg-white text-black font-sans leading-relaxed">
+    <header class="bg-black text-white py-16">
+        <div class="container mx-auto px-4">
+            <h1 class="text-5xl font-bold tracking-tight mb-4">Barrierefreiheit Prüfen</h1>
+            <p class="text-lg max-w-2xl">
+                Stellen Sie sicher, dass Ihre Website die Anforderungen an Barrierefreiheit gemäß BITV 2.0 erfüllt.
+            </p>
         </div>
     </header>
-    <main>
-        <div class="container">
-            <h2>Über das Tool</h2>
-            <p>Unser Tool hilft Ihnen, Barrierefreiheitsprobleme auf Ihrer Website zu identifizieren. Geben Sie einfach die URL ein, und wir zeigen Ihnen eine Übersicht der gefundenen Probleme.</p>
-            <form id="urlForm" class="form">
-                <label for="url">Geben Sie die URL Ihrer Website ein:</label>
-                <input type="url" id="url" name="url" placeholder="https://example.com" required>
-                <button type="submit">Prüfen</button>
-            </form>
-            <div id="results" class="results"></div>
+    <main class="py-16">
+        <div class="container mx-auto px-4">
+            <section class="mb-12">
+                <h2 class="text-3xl font-bold mb-4">Über das Tool</h2>
+                <p class="text-lg max-w-3xl">
+                    Unser Tool hilft Ihnen, Barrierefreiheitsprobleme auf Ihrer Website zu identifizieren. Geben Sie einfach die URL ein, und wir zeigen Ihnen eine Übersicht der gefundenen Probleme.
+                </p>
+            </section>
+            <section>
+                <form id="urlForm" class="grid grid-cols-1 gap-6 max-w-xl">
+                    <label for="url" class="block text-xl font-medium">Geben Sie die URL Ihrer Website ein:</label>
+                    <input
+                        type="url"
+                        id="url"
+                        name="url"
+                        placeholder="https://example.com"
+                        class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
+                        required
+                    >
+                    <button
+                        type="submit"
+                        class="bg-orange-500 text-white font-bold py-3 px-6 rounded uppercase tracking-wide hover:bg-orange-600"
+                    >
+                        Prüfen
+                    </button>
+                </form>
+                <div id="results" class="mt-12"></div>
+            </section>
         </div>
     </main>
-    <footer>
-        <div class="container">
+    <footer class="bg-black text-white py-8">
+        <div class="container mx-auto px-4 text-center">
             <p>&copy; 2025 Barrierefreiheit Prüfer. Alle Rechte vorbehalten.</p>
         </div>
     </footer>

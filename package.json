@@ -1,13 +1,17 @@
 {
-    "name": "pa11y-vercel",
+    "name": "bitv",
     "version": "1.0.0",
     "description": "Barrierefreiheit Prüfer mit Pa11y für Vercel",
     "main": "api/check.js",
     "scripts": {
-        "dev": "vercel dev",
         "start": "vercel start"
     },
     "dependencies": {
         "pa11y": "^6.1.1"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.20",
+        "postcss": "^8.5.1",
+        "tailwindcss": "^3.4.17"
     }
 }
